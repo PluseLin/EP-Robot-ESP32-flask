@@ -1,0 +1,8 @@
+{
+    "configuration": "CPUFreq=240,FlashMode=qio,PartitionScheme=huge_app,FlashFreq=80,DebugLevel=none",
+    "board": "esp32:esp32:esp32cam",
+    "port": "COM7",
+    "programmer": "esp32:esptool",
+    "sketch": "CameraWebServer.ino",
+    "output": "D:\\data\\Arduino_output"
+}

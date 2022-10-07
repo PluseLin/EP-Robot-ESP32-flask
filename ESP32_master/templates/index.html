@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'index.js')}}"></script>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <p id="temperature">当前环境温度：{{data['temp']}}</p>
+        <button class="btn" id="get_temp">
+            获取温度
+        </button>
+    </div>
+    <div class="row-fluid">
+        <h3>视频区域</h3>
+        <img src="{{url_for('image')}}" width="100%">
+    </div>
+    <div class="row-field">
+        <h3>控制</h3>
+        <button class="btn" id="stop_routing">
+            机器人返航
+        </button>
+        <button class="btn" id="reset_port">
+            重置检测端口
+        </button>
+    </div>
+</div>
+{% endblock %}
